@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #e9f2f8;
+  --highlight-color: #c49d5f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-family: "Great Vibes", cursive;
+  color: var(--highlight-color);
+  font-size: 4rem;
+  margin: 1.5rem 0rem;
+}
+
+.card-section {
+  width: 90%;
+}
+.card {
+  margin-bottom: 1.5rem;
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.card-ques {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.add-icon {
+  color: var(--highlight-color);
+  cursor: pointer;
+}
+
+.card_body {
+  border-top: 0.1rem solid rgb(204, 199, 199);
+  padding-top: 0.5rem;
+  opacity: 80%;
+  margin-top: 0.5rem;
+  transition: 2s;
+}
+
+.display-none {
+  display: none;
+}
+
+@media screen and (min-width: 1080px) {
+  .card-section {
+    max-width: 1000px;
+    font-size: 1.35rem;
+  }
+
+  .card-section {
+    width: 100%;
+  }
+
+  .card {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .material-icons.md-18,
+  .card-header {
+    font-size: 2rem !important;
+  }
+}
