@@ -4,10 +4,10 @@ document.querySelectorAll(".add-icon").forEach((box) =>
     let global = cardParent.parentElement.querySelectorAll(".card");
     let cardBody = cardParent.querySelector(".card_body");
 
-    global.forEach((items) =>
-      items.querySelector(".card_body").classList.add("display-none")
-    );
-
+    global.forEach((items) => {
+      if (cardBody != items.querySelector(".card_body"))
+        items.querySelector(".card_body").classList.add("display-none");
+    });
     if (cardBody.classList.contains("display-none")) {
       cardBody.classList.remove("display-none");
     } else {
@@ -15,4 +15,3 @@ document.querySelectorAll(".add-icon").forEach((box) =>
     }
   })
 );
-
